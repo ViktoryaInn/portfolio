@@ -12,6 +12,7 @@ body{
     color: #070707;
     background-color: #ffffff;
     display: block;
+    margin: 0;
 }
 
 .container{
@@ -77,12 +78,13 @@ body{
     .container{
         width: 100%;
     }
+
     .header__link{
         padding: 15px 10px;
     }
 }
 
-@media(max-width: 767px){
+@media(max-width: 768px){
     .header__menu{
         position: fixed;
         background-color: #ffffff;
@@ -106,6 +108,7 @@ body{
         font-size: 34px;
         line-height: 39px;
     }
+
     .header_hamburger{
         display: block;
     }
@@ -155,8 +158,6 @@ body{
 }
 
 .primary{
-    top: 100px;
-    left: 0;    
     margin-top: 100px;
     width: 100%;
     background-color: #ffffff;
@@ -184,8 +185,108 @@ body{
     max-width: 240px;
 }
 
-.primary__img img{
+.primary__img{
     background-color: #f6f6f6;
     text-align: center;
     line-height: 0;
+    
+}
+
+.primary__img img{
+    max-width: 100%;
+    height: auto;
+}
+
+@media(max-width: 768px){
+    .primary{
+        padding: 0;
+        padding-bottom: 70px;
+    }
+
+    .primary__info{
+        display: block;
+        margin: 0 0 30px;
+    }
+
+    .primary__title{
+        font-size: 36px;
+        line-height: 41px;
+    }
+
+    .primary__text{
+        font-size: 18px;
+        line-height: 21px;
+        padding-top: 20px;
+        max-width: 168px;
+    }
+}
+
+.about{
+    height: fit-content;
+    background-color: #f6f6f6;
+    padding: 90px;
+}
+
+.title{
+    font-family: 'UbuntuBold';
+    font-size: 48px;
+    font-style: normal;
+    line-height: 55px;
+    text-align: center;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.title:before, .title:after{
+    content: "";
+    margin: 0 20px;;
+    width: 30px;
+    height: 4px;
+    background-color: #828282;
+}
+
+.text{
+    max-width: 798px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    padding-bottom: 20px;
+}
+
+.skills{
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 60px 0 66px
+}
+
+.skills__list{
+    padding: 40px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+@media(max-width: 768px){
+    .about{
+        padding: 70px;
+    }
+    .title{
+        font-size: 36px;
+        line-height: 41px;
+        margin-bottom: 31px;
+    }
+    .title:before,.title:after{
+        display: none;
+    }
+    .skills__list{
+        padding: 5px 0;
+        display: block;
+        text-align: center;
+    }
+    .skills__item{
+        padding-bottom: 20px;
+    }
 }
