@@ -11,7 +11,7 @@ body{
     line-height: 28px;
     color: #070707;
     background-color: #ffffff;
-    
+    display: block;
 }
 
 .container{
@@ -20,7 +20,7 @@ body{
     padding: 0 20px;
 }
 
-header{
+.header{
     position: fixed;
     top: 0;
     left: 0;
@@ -92,6 +92,7 @@ header{
         height: 100%;
         display: block;
         z-index: 5;
+        transition: transform ease-in 0.4s;
         transform: translateY(-100%);
     }
 
@@ -135,4 +136,56 @@ header{
                     0 16px 0 0 #000000;
 
     }
+
+    .hamburger--active::before{
+        top: 25px;
+        transform: rotate(45deg);
+        box-shadow: none;
+    }
+
+    .hamburger--active::after{
+        top: 25px;
+        transform: rotate(-45deg);
+        box-shadow: none;
+    }
+
+    .hamburger::before, .hamburger::after{
+        transition: all ease-in 0.4s;
+    }
+}
+
+.primary{
+    top: 100px;
+    left: 0;    
+    margin-top: 100px;
+    width: 100%;
+    background-color: #ffffff;
+    padding: 60px 0;
+}
+
+.primary__info{
+    display: flex;
+    margin: 0 20px 35px;
+}
+
+.primary__title{
+    font-family: 'UbuntuBold';
+    font-size: 48px;
+    font-style: normal;
+    line-height: 55px;
+    max-width: 350px;
+    margin: 0;
+    margin-right: 100px;
+}
+
+.primary__text{
+    margin: 0;
+    padding-top: 10px;
+    max-width: 240px;
+}
+
+.primary__img img{
+    background-color: #f6f6f6;
+    text-align: center;
+    line-height: 0;
 }

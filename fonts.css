@@ -1,0 +1,15 @@
+@font-face{
+    font-family: 'UbuntuBold';
+    src: url("ubuntubold.woff") format("woff"),
+        url("fonts/ubuntubold.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face{
+    font-family: 'UbuntuMedium';
+    src: url("fonts/ubuntumedium.woff") format("woff"),
+        url("fonts/ubuntumedium.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
