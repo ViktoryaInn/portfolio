@@ -269,6 +269,140 @@ body{
     justify-content: space-between;
 }
 
+.portfolio{
+    height: fit-content;
+    background-color: #f6f6f6;
+    padding: 90px;
+}
+
+.advertising__list img{
+    margin: 25px 0;
+    max-width: 100%;
+    height: auto;
+}
+
+.advertising__text{
+    padding: 0;
+}
+
+.footer{
+    height: fit-content;
+    background-color: #ffffff;
+    padding: 80px;
+    text-align: center;
+}
+
+.footer__text{
+    width: 378px;
+    padding: 0;
+}
+
+.footer__write{
+    width: 253px;
+    height: 52px;
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'UbuntuBold';
+    font-size: 24px;
+    border: transparent;
+    border-radius: 25px;
+    margin: 53px 0 47px;
+}
+
+.footer__write:focus{
+    outline: none;
+}
+
+.footer__social{
+    margin: 0 auto;
+    width: 300px;
+    padding: 0 7px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 51px;
+}
+
+.social__item{
+    text-decoration: none;
+}
+
+.social_text{
+    font-size: 18px;
+    line-height: 21px;
+    color: #828282;
+}
+
+/* modal window */
+.modal__window{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .75);
+}
+
+.modal__window--active{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal__wrap{
+    padding: 0 90px;
+    width: 850px;
+    background-color: #f3f3f3;
+}
+
+.modal__close{
+    float: right;
+    width: 24px;
+    height: 24px;
+    padding: 0;
+    font-style: 0;
+    border: 0;
+    background-color: transparent;
+    cursor: pointer;
+    z-index: 6;
+}
+
+.modal__close::before{
+    content: "";
+    float: right;
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(45deg);
+}
+
+.modal__close::after{
+    content: "";
+    float: right;
+    position: absolute;
+    width: 35px;
+    height: 4px;
+    background-color: #000000;
+    transform: rotate(-45deg);
+}
+
+.modal__header{
+    padding: 30px 0 35px;
+}
+
+.modal__title{
+    font-size: 32px;
+    line-height: 37px;
+    margin: 0;
+    width: 669px;
+    text-align: center;
+}
+
+.modal__form{
+    padding: 60px 0 67px;
+}
+
 @media(max-width: 768px){
     .about{
         padding: 70px;
@@ -277,6 +411,10 @@ body{
         font-size: 36px;
         line-height: 41px;
         margin-bottom: 31px;
+    }
+    .text{
+        font-size: 18px;
+        line-height: 21px;
     }
     .title:before,.title:after{
         display: none;
@@ -288,5 +426,21 @@ body{
     }
     .skills__item{
         padding-bottom: 20px;
+    }
+    .portfolio{
+        padding: 50px;
+    }
+    .advertising__list img{
+        margin: 30px 0;
+    }
+    .footer{
+        padding: 28px;
+    }
+    .footer__write{
+        margin: 54px 0 50px;
+    }
+    .footer__social{
+        width: 246px;
+        margin-bottom: 39px;
     }
 }
