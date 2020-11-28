@@ -107,21 +107,25 @@
     </footer>
     <div class="modal__window">
         <div class="modal__wrap">
-            <div class="modal__header">
                 <button class="modal__close"></button>
+            <div class="modal__container">
+                <h2 class="modal__title">оставьте заявку!<br />
+                    я&nbsp;позвоню вам в&nbsp;ближайшее время</h2>
+                <form class="modal__form">
+                    <div class="modal__input">
+                        <p class="input__label">Имя</p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="modal__input">
+                        <p class="input__label">Телефон</p>
+                        <input class="input" type="text">
+                    </div>
+                    <div class="modal__send">
+                        <p class="modal__text">*Нажимая кнопку, я даю свое согласение на обработку персональных данных</p>
+                        <button class="btn-send">Отправить</button>
+                    </div>
+                </form>
             </div>
-            <h2 class="modal__title">ОСТАВЬТЕ ЗАЯВКУ!<br />
-                Я&nbsp;ПОЗВОНЮ ВАМ В&nbsp;БЛИЖАЙШЕЕ ВРЕМЯ</h2>
-            <form class="modal__form">
-                <div class="modal__input">
-                    <input type="text" class="modal__name">
-                    <input type="text" class="modal__phone">
-                </div>
-                <div class="modal__send">
-                    <p class="modal__text"></p>
-                    <button class="btn-close">Отправить</button>
-                </div>
-            </form>
         </div>
     </div>
     <script src="script.js"></script>
